@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.codejack.autoamp2.HomeFragment"
+    >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/home_button_students"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@color/colorBlue"
+                android:text="Students" />
+
+            <TextView
+                android:id="@+id/home_button_schedule"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@color/colorAqua"
+                android:text="Schedule" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/home_button_reservations"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@color/colorPurple"
+                android:text="Reservations" />
+
+            <TextView
+                android:id="@+id/home_button_lessons"
+                android:layout_width="0sp"
+                android:layout_height="fill_parent"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@color/colorOrange"
+                android:text="Lessons" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/home_button_route_tracking"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@color/colorGreen"
+                android:text="Route Tracking" />
+
+            <TextView
+                android:id="@+id/home_button_logout"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@color/colorRed"
+                android:text="Logout" />
+        </TableRow>
+
+
+    </TableLayout>
+
+</LinearLayout>

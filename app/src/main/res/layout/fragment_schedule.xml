@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    android:scrollbarAlwaysDrawHorizontalTrack="false">
+
+    <LinearLayout
+        style="@style/width_match_parent_max_600"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_marginRight="3dp"
+                android:layout_weight=".28"
+                android:background="@drawable/spinner"
+                android:orientation="horizontal"
+                android:layout_margin="5sp">
+
+                <Spinner
+                    android:id="@+id/spinner_schedule_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_spinner" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button_schedule_main_edit"
+                android:text="Edit"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:background="@color/colorOrange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5sp" />
+
+            <Button
+                android:id="@+id/button_schedule_main_create"
+                android:text="Create day"
+                android:layout_gravity="center"
+                android:background="@color/colorPurple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5sp"
+                android:layout_marginRight="10sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_calendar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10sp"/>
+
+        <Button
+            android:id="@+id/button_schedule_main_save"
+            android:text="Save"
+            android:layout_gravity="center"
+            android:layout_margin="10sp"
+            android:background="@color/colorGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>

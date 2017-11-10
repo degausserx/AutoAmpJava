@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:gravity="center_horizontal"
+    android:background="@color/colorG2"
+    android:focusable="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Start: "
+                android:gravity="start|center_vertical"
+                android:textStyle="bold"
+                android:padding="10sp"
+                android:layout_margin="5sp" />
+
+            <TextView
+                android:id="@+id/edit_reservations_view_edit_start"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:minWidth="60dp"
+                android:inputType="text"
+                android:padding="10sp"
+                android:layout_margin="5sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:background="@color/colorAqua"/>
+
+            <Switch
+                android:id="@+id/switch_reservations_view"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right|center"
+                android:switchMinWidth="70sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorG3"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/text_reservations_name"
+                android:text="Testing text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_reservation_hidden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</TableRow>
